@@ -1,0 +1,133 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+main {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50%;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+    font-family: "Hanken Grotesk", sans-serif;
+}
+
+
+.flow-space > * + * {
+    margin-top: 1rem;
+}
+
+.result__word-heading {
+    font-weight: 600;
+}
+
+.result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding:2rem;
+    background-color:hsl(241, 81%, 54%) ;
+    background-image: linear-gradient(0deg, hsl(241, 81%, 54%), hsl(252, 90%, 72%));
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.result__number {
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+    padding: 2rem 0;
+    background-image: linear-gradient(180deg,hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0) );
+}
+
+.result__word-praise-1 {
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+
+.result__word-heading, .result__word-praise-2 {
+    font-size: 1.2rem;
+    color: hsl(241, 100%, 89%);
+}
+
+.large__number {
+    font-weight: 900;
+    font-size: 3.5rem;
+}
+
+.small__number {
+    color: hsl(241, 100%, 89%);
+}
+
+.summary {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.summary__word {
+    padding-top: 1rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: hsl(224, 30%, 27%);
+    text-align: left;
+}
+
+.categories {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.category__score {
+    padding: 15px 20px;
+    border-radius: 5px;
+}
+
+.category__score {
+    color: black;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.category {
+    display: flex;
+    gap: 1rem;
+}
+
+.light--red {
+    background-color: hsla(0, 87%, 76%, 0.155);
+    color: hsl(0, 100%, 67%);
+}
+
+
+.orange--yellow {
+    background-color:hsla(39, 100%, 56%, 0.155) ;
+    color:  hsl(39, 100%, 56%);
+}
+
+.green--teal {
+    background-color:hsl(166, 100%, 37%, 0.155) ;
+    color: hsl(166, 100%, 37%);
+}
+
+.cobalt--blue {
+    background-color: hsl(234, 85%, 45%, 0.155);
+    color: hsl(234, 85%, 45%);
+}
+
+.bold {
+    font-weight: 600;
+    color: hsl(224, 30%, 27%);
+}
+
+.light {
+    color: hsl(241, 100%, 89%);
+}
